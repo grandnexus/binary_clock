@@ -4,14 +4,17 @@ import 'package:flutter/services.dart' show SystemChrome, DeviceOrientation;
 import 'package:binary_clock/clock.dart';
 
 void main() {
+  // Set the device orientations to display in landscape modes only.
   SystemChrome.setPreferredOrientations([
     DeviceOrientation.landscapeRight,
     DeviceOrientation.landscapeLeft,
   ]);
 
+  // Run the app.
   runApp(BinaryClockApp());
 }
 
+/// This is the root of the application.
 class BinaryClockApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {

@@ -5,6 +5,7 @@ import 'package:flutter/material.dart';
 import 'package:binary_clock/binary_time.dart';
 import 'package:binary_clock/clock_column.dart';
 
+/// Clock widget to display the current time.
 class Clock extends StatefulWidget {
   Clock({Key key}) : super(key: key);
 
@@ -16,7 +17,7 @@ class _ClockState extends State<Clock> {
   Timer _timer;
   BinaryTime _now = BinaryTime();
 
-  // Tick the clock.
+  // Tick the clock every second.
   @override
   void initState() {
     _timer = Timer.periodic(Duration(seconds: 1), (v) {
@@ -33,7 +34,7 @@ class _ClockState extends State<Clock> {
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
-          // Columns for the clock
+          // Columns for the clock.
           ClockColumn(
             binaryInteger: _now.hourTens,
             title: 'H',
