@@ -4,7 +4,7 @@
 
 A binary clock which shows time in binary.
 
-This project is created based on the tutorial on https://fireship.io/lessons/build-a-binary-clock-flutter.
+This project is created based on the tutorial from https://fireship.io/lessons/build-a-binary-clock-flutter.
 
 ## Getting Started
 
