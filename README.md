@@ -1,6 +1,6 @@
 ## Binary Clock
 
-<img src='binaryclock.png' width='350'>
+<img src='binaryclock.png' width='700'>
 
 A binary clock which shows time in binary.
 
